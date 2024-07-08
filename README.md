@@ -70,7 +70,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/your-repo.git
+git clone [https://github.com/bySegunMoses/hngx-devops-stage-2.git](https://github.com/bySegunMoses/hngx-devops-stage-2.git)
 cd your-repo
 Build and Run Docker Containers:
 
@@ -79,10 +79,10 @@ Copy code
 docker-compose up --build
 Access the Applications:
 
-Frontend: http://localhost:5173
-Backend: http://localhost:8000
-Adminer: http://localhost:8080
-Nginx Proxy Manager: http://localhost:81
+Frontend: [https://stagetwodevops.chickenkiller.com](https://stagetwodevops.chickenkiller.com/)
+Backend: http://stagetwodevops.chickenkiller.co:8000
+Adminer: [db.stagetwodevops.chickenkiller.com](http://db.stagetwodevops.chickenkiller.com/)
+Nginx Proxy Manager: [proxy.stagetwodevops.chickenkiller.com](https://proxy.stagetwodevops.chickenkiller.com/)
 Configure Domains and SSL in NGINX Proxy Manager:
 
 Log in using the default credentials (admin@example.com / changeme).
