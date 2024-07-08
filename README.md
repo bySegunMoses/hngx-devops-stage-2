@@ -1,8 +1,10 @@
-Project: Full Stack Web Application with Docker, NGINX, and NGINX Proxy Manager
+#Project: Full Stack Web Application with Docker, NGINX, and NGINX Proxy Manager
+
+
 Overview
 This project demonstrates the setup of a full-stack web application using Docker, including a PostgreSQL database, a backend application, and a frontend application. We have also integrated NGINX as a reverse proxy and NGINX Proxy Manager to manage SSL certificates and simplify the handling of multiple services.
 
-Project Structure
+#Project Structure#
 The project consists of the following main components:
 
 PostgreSQL: A relational database for persistent data storage.
@@ -54,15 +56,15 @@ Volumes: Mounts directories for proxy configuration and SSL certificates.
 Depends On: Ensures NGINX and Adminer services are started before NGINX Proxy Manager.
 Volumes
 postgres_data: Ensures that PostgreSQL data is stored persistently.
-Decision to Use NGINX and NGINX Proxy Manager
+The decision to Use NGINX and NGINX, Proxy Manager
 NGINX
-Reverse Proxy: NGINX serves as a reverse proxy, routing requests to the appropriate service (frontend, backend) based on URL patterns. This setup improves security and allows for better load balancing.
-Static File Serving: NGINX efficiently serves static files, reducing load on the backend and improving response times.
+Reverse Proxy: NGINX is a reverse proxy, routing requests to the appropriate service (frontend, backend) based on URL patterns. This setup improves security and allows for better load balancing.
+Static File Serving: NGINX efficiently serves static files, reducing the load on the backend and improving response times.
 SSL Termination: NGINX handles SSL termination, meaning it can manage HTTPS requests and forward them as HTTP to the backend services.
 NGINX Proxy Manager
 User-Friendly Interface: NGINX Proxy Manager provides a web-based interface for configuring proxy settings, managing domains, and obtaining SSL certificates with Let's Encrypt, making it easier to manage complex configurations without editing config files directly.
-SSL Management: The Proxy Manager simplifies the process of obtaining and renewing SSL certificates, ensuring secure connections for the web application.
-Access Control: It allows for easy setup of access controls and redirections, adding an additional layer of security and flexibility to the application.
+SSL Management: The Proxy Manager simplifies obtaining and renewing SSL certificates, ensuring secure connections for the web application.
+Access Control: It allows for easy setup of access controls and redirections, adding layer of security and flexibility to the application.
 How to Run the Project
 Clone the Repository:
 
@@ -83,7 +85,6 @@ Adminer: http://localhost:8080
 Nginx Proxy Manager: http://localhost:81
 Configure Domains and SSL in NGINX Proxy Manager:
 
-Open http://localhost:81 in your browser.
 Log in using the default credentials (admin@example.com / changeme).
 Add your domains and configure SSL as needed.
 Conclusion
